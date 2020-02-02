@@ -1,9 +1,4 @@
-# Rails chat application
-Code of the rails chat tutorial from [iridakos.com](https://iridakos.com/tutorials/2019/04/04/creating-chat-application-rails-websockets.html)
-
-![Bash completion demo](https://iridakos.com/assets/images/posts/rails-chat-tutorial/rails-chat-tutorial.gif)
-
-# MIT License
+MIT License
 
 Copyright (c) 2019 Lazarus Lazaridis
 
@@ -24,6 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-A Demo Rails App (chat app), with Docker, PostGres, Redis on docker images and with commands on how to run it.
