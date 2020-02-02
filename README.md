@@ -27,3 +27,16 @@ SOFTWARE.
 
 
 A Demo Rails App (chat app), with Docker, PostGres, Redis on docker images and with commands on how to run it.
+
+Run the following commands on the root of the folder, to generate the Gemfile and Gemfile.lock:
+
+# bundle update
+# bundle install --no-deployment
+
+The Docker commands to build and run the application.
+
+# docker build . -t rails-app
+# docker run --name rails-app-pg -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+# docker run --name rails-app-redis -p 6379:6379 -d redis
+# docker run --name rails-app-web -e DATABASE_HOST=172.17.0.1 -e DATABASE_PORT=5432 -e DATABASE_USERNAME=postgres -e DATABASE_PASSWORD=postgres -e REDIS_URL=redis://172.17.0.1:6379/1 -p 3000:3000 rails-app
+# docker-compose run web rails new . --force --no-deps --database=postgresql
